@@ -12,10 +12,10 @@ module reg_file (
 
 logic [31:0] Registers [31:0];
 
-initial begin
-    for (int i = 0; i < 32; i++)
-        Registers[i] = 32'd0;
-end
+//initial begin
+//  for (int i = 0; i < 32; i++)
+//        Registers[i] = 32'd0;
+//end
 
 always_comb begin
     read_data1 = Registers[read_reg1];
